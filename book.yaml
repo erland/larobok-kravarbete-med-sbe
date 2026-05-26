@@ -1,0 +1,51 @@
+title: "Kravarbete med SBE"
+subtitle: "En praktisk handbok för kravanalytiker som vill gå från traditionella krav till levande specifikation"
+author: "Erland Lindmark"
+language: "sv"
+difficulty: "experienced"
+audience: "Erfarna kravanalytiker som vill förändra sitt arbetssätt och sin dokumentation vid kravarbete enligt Specification by Example."
+book_type: "practical_textbook_handbook"
+edition: "1"
+version: "0.3"
+date: "2026-05-26"
+rights: "All rights reserved"
+publisher: ""
+cover_image: "assets/cover/cover.png"
+identifier: "urn:uuid:0121523c-612e-4e1c-bba1-7502a2525467"
+creator_role: "aut"
+subject: "Kravarbete, Specification by Example, SBE, BDD, acceptanskriterier, kravdokumentation"
+description: "En praktisk handbok om hur erfarna kravanalytiker kan gå från traditionella krav och acceptanskriterier till exempelbaserad specifikation och levande dokumentation med SBE."
+project_slug: "kravarbete-med-sbe"
+chapters:
+  - "chapters/00-inledning.md"
+  - "chapters/varfor-traditionellt-kravarbete-inte-alltid-racker-01.md"
+  - "chapters/vad-sbe-ar-och-inte-ar-02.md"
+  - "chapters/kravanalytikerns-forandrade-roll-03.md"
+  - "chapters/caset-brottsutredningsstod-i-myndighetsmiljo-04.md"
+  - "chapters/hitta-funktionella-krav-for-sbe-05.md"
+  - "chapters/fran-traditionella-krav-till-exempelbaserad-specifikation-06.md"
+  - "chapters/regler-exempel-och-scenarier-i-praktiken-07.md"
+  - "chapters/dokumentation-for-verksamhet-och-it-08.md"
+  - "chapters/exempelworkshops-och-gemensam-forfining-09.md"
+  - "chapters/gherkin-cucumber-och-concordion-10.md"
+  - "chapters/samspel-mellan-krav-test-och-utveckling-11.md"
+  - "chapters/kvalitetssakring-av-sbe-specifikationer-12.md"
+  - "chapters/generella-krav-i-sbe-13.md"
+  - "chapters/icke-funktionella-krav-och-kvalitetskrav-14.md"
+  - "chapters/infora-sbe-i-etablerad-organisation-15.md"
+  - "chapters/mallar-checklistor-och-arbetsmonster-16.md"
+exports:
+  epub:
+    enabled: true
+    include_text_toc: false
+    airy_layout: true
+    render_markdown_styles: true
+  pdf:
+    enabled: true
+    include_toc_before_introduction: true
+    render_markdown_styles: true
+  docx:
+    enabled: true
+    render_markdown_styles: true
+  markdown:
+    enabled: true
