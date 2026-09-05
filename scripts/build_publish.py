@@ -54,7 +54,7 @@ def postprocess_epub(epub: Path) -> None:
             nav_id = nav_match.group(1) or nav_match.group(2)
             opf_text = re.sub(
                 rf'(<itemref\b[^>]*idref="{re.escape(nav_id)}"[^>]*)(/?>)',
-                lambda m: m.group(1) if 'linear=' in m.group(1) else m.group(1) + ' linear="no"' + m.group(2),
+                lambda m: (m.group(1) + m.group(2)) if 'linear=' in m.group(1) else (m.group(1) + ' linear="no"' + m.group(2)),
                 opf_text,
             )
             opf.write_text(opf_text, encoding="utf-8")
