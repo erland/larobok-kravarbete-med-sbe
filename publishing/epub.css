@@ -1,0 +1,45 @@
+body {
+  font-family: serif;
+  line-height: 1.55;
+  margin: 5%;
+}
+h1, h2, h3 {
+  line-height: 1.2;
+}
+h1 {
+  text-align: center;
+  margin-top: 1.8em;
+  margin-bottom: 1.2em;
+}
+h1 .chapter-number,
+h1 .chapter-title {
+  display: block;
+}
+h1 .chapter-separator {
+  display: none;
+}
+h1 .chapter-number {
+  font-size: 0.72em;
+  font-weight: normal;
+  margin-bottom: 0.35em;
+}
+p {
+  margin: 0 0 0.75em 0;
+}
+pre, code {
+  font-family: monospace;
+}
+pre {
+  white-space: pre-wrap;
+  border: 1px solid currentColor;
+  padding: 0.75em;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td {
+  border-bottom: 1px solid currentColor;
+  padding: 0.4em;
+  vertical-align: top;
+}
