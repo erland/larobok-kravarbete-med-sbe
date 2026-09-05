@@ -1,0 +1,34 @@
+name: Validate
+
+on:
+  pull_request:
+    paths:
+      - "book.yaml"
+      - "chapters/**"
+      - "assets/**"
+      - "scripts/**"
+      - "publishing/**"
+      - ".github/workflows/**"
+  push:
+    branches:
+      - main
+    paths:
+      - "book.yaml"
+      - "chapters/**"
+      - "assets/**"
+      - "scripts/**"
+      - "publishing/**"
+      - ".github/workflows/**"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Install validation dependency
+        run: python3 -m pip install --disable-pip-version-check pyyaml
+      - name: Validate project
+        run: python3 scripts/export-book.py markdown
